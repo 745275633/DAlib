@@ -1,0 +1,17 @@
+#!/bin/bash
+case $1 in
+make)
+	read a < ../build-times
+	a=`expr $a + 1`
+	echo $a > ../build-times
+	make | lolcat
+	;;
+cmake)
+	cmake ..  -DCMAKE_BUILD_TYPE=Debug | lolcat && $0 make
+	;;
+reset)
+	echo 0 > ../build-times
+	;;
+*)
+	echo 未知选项 | lolcat -F 2
+esac

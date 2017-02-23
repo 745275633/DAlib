@@ -1,0 +1,27 @@
+/*!
+ * \file DA/version.hpp
+ * \brief 这个文件定义了版本信息。
+ * \author 吞噬黑洞的数据（745275633）
+ */
+
+#ifndef DA_VERSION_HPP
+#define DA_VERSION_HPP
+
+namespace DA
+{
+class version
+{
+public:
+	const int VERSION_MAJOR = @major_version@;
+	const int MAJOR_VERSION = @major_version@;
+	const int VERSION_MINOR = @minor_version@;
+	const int MINOR_VERSION = @minor_version@;
+	const int VERSION_REVISION = @revision_version@;
+	const int REVISION_VERSION = @revision_version@;
+	const int VERSION_BUILD = @build_version@;
+	const int BUILD_VERSION = @build_version@;
+	const char VERSION[50] = "@major_version@.@minor_version@.@revision_version@ Build @build_version@";
+};
+}
+
+#endif
