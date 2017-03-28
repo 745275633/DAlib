@@ -2,8 +2,8 @@
 
 	sudo apt-get update
 	sudo apt-get install cmake
-	./install.sh install
+	./tool/install.sh install
 
 ## 卸载
 
-	./install.sh uninstall
+	./tool/install.sh uninstall
