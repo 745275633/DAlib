@@ -48,6 +48,10 @@ public:
 		win = std::null_ptr;
 	}*/
 	~window() = default;
+	pw raw()
+	{
+		retuen win_;
+	}
 	bool put(char c)
 	{
 		return !::waddch(win_.get(), c);
