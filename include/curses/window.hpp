@@ -50,7 +50,7 @@ public:
 	~window() = default;
 	pw raw()
 	{
-		retuen win_;
+		return win_;
 	}
 	bool put(char c)
 	{
