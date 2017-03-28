@@ -1,8 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
 project(DA-lubrary)
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake_Modules/")
-include(cmakeapt)
-#apt_get(install libboost-all-dev)
 # 版本号
 set (major_version 0)
 set (minor_version 1)
