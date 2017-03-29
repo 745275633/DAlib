@@ -65,8 +65,7 @@ public:
 	}
 	void keypad(bool on)
 	{
-		if (::keypad(win_.get(), on))
-			DA_THROW_EXCEPTION_0();
+		::keypad(win_.get(), on);
 	}
 	void refresh()
 	{
